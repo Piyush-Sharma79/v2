@@ -58,8 +58,6 @@ build/
 *.apk
 *.aab
 
-# Local info
-info.txt
 
 # Ignore EAS credentials (if used)
 credentials.json

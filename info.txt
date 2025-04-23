@@ -1,1 +1,1 @@
-deployment purpose only making an apk and ios app.
+deployment purpose only making an apk and ios app

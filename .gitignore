@@ -1,0 +1,76 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Environment variables and sensitive files
+.env
+.env.*
+!.env.example
+
+# Native build artifacts and signing keys
+android/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# Jest
+coverage/
+.jest/
+
+# Logs
+*.log
+
+# Misc
+*.tmp
+*.temp
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+*.swp
+
+# Ignore build output
+build/
+
+# Ignore release artifacts
+*.apk
+*.aab
+
+# Local info
+info.txt
+
+# Ignore EAS credentials (if used)
+credentials.json
+
+# Ignore system files
+Thumbs.db
+
+# Ignore package manager lockfiles except npm
+# yarn.lock
+# pnpm-lock.yaml
+
+# Ignore Expo and EAS cache
+.expo/*
+.easl/*

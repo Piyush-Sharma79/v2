@@ -1,0 +1,67 @@
+{
+  "name": "calaiclone",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "build:android": "npx expo export:embed --platform android && npx expo export -p android --output=./dist && npx expo prebuild -p android && cd android && ./gradlew assembleRelease"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "1.23.1",
+    "@react-navigation/bottom-tabs": "^7.3.10",
+    "@react-navigation/native": "^7.1.6",
+    "@react-navigation/native-stack": "^7.3.10",
+    "@supabase/supabase-js": "^2.49.4",
+    "axios": "^1.8.4",
+    "expo": "~52.0.46",
+    "expo-blur": "~14.0.3",
+    "expo-camera": "^16.0.18",
+    "expo-font": "~13.0.4",
+    "expo-image-picker": "~16.0.6",
+    "expo-linear-gradient": "~14.0.2",
+    "expo-status-bar": "~2.0.1",
+    "expo-system-ui": "^4.0.9",
+    "react": "18.3.1",
+    "react-native": "0.76.9",
+    "react-native-dotenv": "^3.4.11",
+    "react-native-paper": "^5.13.3",
+    "react-native-safe-area-context": "4.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/plugin-transform-class-properties": "^7.23.3",
+    "@babel/plugin-transform-flow-strip-types": "^7.22.5",
+    "@babel/plugin-transform-nullish-coalescing-operator": "^7.23.4",
+    "@babel/plugin-transform-optional-chaining": "^7.23.4",
+    "@babel/plugin-transform-private-methods": "^7.23.3",
+    "@babel/plugin-transform-private-property-in-object": "^7.23.4",
+    "@tsconfig/react-native": "^3.0.5",
+    "@types/jest": "^29.5.14",
+    "@types/react": "~18.3.12",
+    "@types/react-native": "^0.72.8",
+    "@xmldom/xmldom": "^0.8.0",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "glob": "^9.3.5",
+    "lru-cache": "^10.1.0",
+    "rimraf": "^4.4.1",
+    "typescript": "^5.3.3"
+  },
+  "overrides": {
+    "glob": "^9.3.5",
+    "rimraf": "^4.4.1",
+    "@xmldom/xmldom": "^0.8.0",
+    "inflight": "npm:lru-cache@^10.1.0",
+    "sudo-prompt": "npm:@npmcli/promise-spawn@^6.0.2"
+  },
+  "resolutions": {
+    "glob": "^9.3.5",
+    "rimraf": "^4.4.1",
+    "@xmldom/xmldom": "^0.8.0",
+    "inflight": "npm:lru-cache@^10.1.0",
+    "sudo-prompt": "npm:@npmcli/promise-spawn@^6.0.2"
+  },
+  "private": true
+}

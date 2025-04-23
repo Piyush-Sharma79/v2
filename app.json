@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "calAiclone",
+    "slug": "calAiclone",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.piyushsh.calAiclone",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to take photos of food for nutritional analysis.",
+        "NSPhotoLibraryUsageDescription": "This app accesses your photos to analyze food images for nutritional content."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.piyushsh.calAiclone",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to analyze food images for nutritional content."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "The app needs access to your camera to take photos of food for nutritional analysis."
+        }
+      ]
+    ],
+    "extra": {
+      "GOOGLE_API_KEY": "@env:GOOGLE_API_KEY",
+      "USDA_API_KEY": "@env:USDA_API_KEY",
+      "eas": {
+        "projectId": "78af3ce4-29d1-48b4-b699-c3875b2f0ac7"
+      }
+    },
+    "owner": "piyushshh"
+  }
+}

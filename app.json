@@ -52,10 +52,7 @@
     ],
     "extra": {
       "GOOGLE_API_KEY": "@env:GOOGLE_API_KEY",
-      "USDA_API_KEY": "@env:USDA_API_KEY",
-      "eas": {
-        "projectId": "78af3ce4-29d1-48b4-b699-c3875b2f0ac7"
-      }
+      "USDA_API_KEY": "@env:USDA_API_KEY"
     },
     "owner": "piyushshh"
   }
